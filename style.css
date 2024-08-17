@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=DM+Sans&family=Jersey+10&family=Open+Sans:wght@300&family=Permanent+Marker&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Tint&family=DM+Sans&family=Jersey+10&family=Open+Sans:wght@300&family=Permanent+Marker&family=Poppins&family=Roboto&family=Rubik+Mono+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', sans-serif;
+}
+nav{
+ background: #ba032c;
+ color: #ffffff;
+ display: flex;
+ justify-content: space-between;
+}
+
+nav .mainMenu{
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+nav .openMenu{
+    font-size: 30px;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu, .icons i{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+section{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#About{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f7f7f7;
+}
+
+.image img{
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+.text{
+    max-width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text p {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin: 10px;
+    color: #ba032c;
+    font-size: 35px;
+}
+
+.play-now{
+    height: 80px;
+    width: 180px;
+    align-self: auto;
+    padding: 15px 25px;
+    background-color: #ba032c;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 10px;
+    transition: transform .2s;
+}
+
+.play-now a{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.play-now:hover{
+    transform: scale(1.1);
+}
+
+#Game img{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
+
+#Contact{
+    background-color: #ba032c;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.top{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.footer-icons a{
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none ;
+}
+
+.copyrights{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    nav .mainMenu{
+        height: 40vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ba032c;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu{
+        display: block;
+        align-self: center;
+    }
+    
+    #About{
+        padding: 0;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description { 
+        width: 100vw;
+    }
+
+    .image{
+        display: none;
+    }
+    .text{
+        width: 100%;
+        max-height: 100%;
+        font-size: 35px;
+        padding: 0;
+    }
+    #About p{
+        font-size: 35px;
+    }
+}
